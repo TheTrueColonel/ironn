@@ -1,0 +1,18 @@
+[package]
+name = "ironn"
+version = "0.1.0"
+authors = ["Benjamin Sims <benjaminesims@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossterm = "0.27"
+ratatui = "0.26"
+unicode-segmentation = "1.11"
+color-eyre = "0.6"
+thiserror = "1.0"
+log = "0.4"
+
+[profile.dev.package.backtrace]
+opt-level = 3
